@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3" parallel="tests"
+	thread-count="3">
+
+
+	<test name="Login Tests">
+		<classes>
+			<class name="testsAssign.LoginTests" />
+
+		</classes>
+	</test>
+
+
+	<test name="Register Test">
+
+		<classes>
+			<class name="testsAssign.RegisterTests" />
+		</classes>
+	</test>
+
+
+	<test name="Forgotten Password Test">
+        <classes>
+			<class name="testsAssign.frgtPswdTests" />
+		</classes>
+	</test>
+
+
+</suite>

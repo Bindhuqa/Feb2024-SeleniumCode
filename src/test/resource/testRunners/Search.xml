@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3" parallel="tests"
+	thread-count="4">
+
+
+	<test name="Register Test _ chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+		<parameter name="username" value="bindhu@gmail.com" />
+		<parameter name="password" value="bindhu" />
+		<classes>
+			<class name="testsAssign.SearchTest" />
+
+		</classes>
+	</test>
+</suite>
